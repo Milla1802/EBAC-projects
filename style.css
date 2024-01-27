@@ -41,14 +41,14 @@ section{
 section>h2 {
   color: #914cce;
   font-size: 34px;
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 article {
   display: inline-block;
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid #b27be2;
+  border: 2px solid #000;
   max-width: 400px;
   height: 470px;
   margin: 20px 10px;
@@ -67,6 +67,12 @@ article {
     p{
       margin: 10px auto;
       width: 200px;
+      text-align: center;
+    }
+
+    a{
+      color: white;
+      padding: 8px 20px;
       text-align: center;
     }
   }
