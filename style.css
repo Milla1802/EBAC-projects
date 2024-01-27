@@ -1,16 +1,17 @@
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body, input, textarea {
   font-family: 'Roboto', sans-serif;
 }
 
-section h2, section h1, header{
+section h2,
+section h1,
+section h3,
+header {
   font-family: 'Bungee', sans-serif;
 }
 
@@ -54,39 +55,124 @@ header {
   margin: 0 auto;
 }
 
-section h2{
+section h2 {
   font-weight: normal;
   color: rgb(223, 60, 60);
 }
 
-#about{
+#about {
   margin: 30px 0;
 
-  .container{
+  .container {
     display: flex;
-    
-    .right_side{
+
+    .right_side {
       margin-left: 20px;
-      
-      h2{
+
+      h2 {
         margin-bottom: 10px;
       }
-      
-      p{
+
+      p {
         line-height: 25px;
         margin-bottom: 15px;
       }
-      .brands{
+
+      .brands {
         display: flex;
-        li{
+
+        li {
           list-style: none;
           margin-right: 10px;
         }
 
-        img{
+        img {
           height: 20px;
         }
       }
     }
   }
+}
+
+#contact {
+  margin-bottom: 50px;
+  .box-contact {
+    display: flex;
+    justify-content: space-between;
+    h3{
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    .form-contact {
+      margin-top: 20px;
+      input {
+        width: 300px;
+        display: block;
+        padding: 5px 10px;
+        margin-bottom: 8px;
+        border: none;
+        border-bottom: 1px rgb(237 159 159) solid;
+
+        &::placeholder {
+          color: #ccc;
+        }
+      }
+
+      textarea {
+        width: 300px;
+        margin-top: 10px;
+        padding: 10px;
+        border: 2px solid rgb(237 159 159);
+        resize: none;
+        &::placeholder {
+          color: #ccc;
+        }
+      }
+
+      button{
+        width: 300px;
+        display: block;
+        background-color: rgb(223, 60, 60);
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover{
+          background-color: rgb(237 159 159);
+        }
+
+      }
+
+      input:focus, textarea:focus{
+        outline-color: rgb(223, 60, 60);
+      }
+    }
+
+    .social {
+      li{
+        list-style: none;
+        display: inline;
+        margin-right: 10px;
+      }
+      img {
+        height: 24px;
+      }
+    }
+  }
+}
+
+footer{
+height: 60px;
+padding: 20px 0;
+background-color: rgb(223, 60, 60);
+text-align: center;
+
+p{
+  color: white;
+  float: inline-end;
+}
 }
