@@ -1,116 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CodeFolio- Camila Arruda</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-
+  <title> exercicio_html_js</title>
 </head>
-
 <body>
-  <header>
-    <div class="container">
-      <h1>CodeFolio</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#clients">Clients</a>
-          </li>
-          <li>
-            <a href="#blog">Blog</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+  <div class="container">
+    <form id="fomulario">
+      <label for="campo-a">Campo A</label>
+      <input type="number" id="campo-a">
+      <label for="campo-b">Campo B</label>
+      <input type="number" id="campo-b">
+      <button type="submit" id="btn">Enviar</button>
+    </form>
+  </div>
 
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <section id="home">
-    <div class="container">
-      <img src="./assets/images/perfil.png" alt="foto de Camila">
-      <div class="right_side">
-        <h1>Hi! <br> I'm Camila Arruda</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum suscipit autem officiis?
-          Dolores cum dolore maxime illum ratione, ab perspiciatis iure, dolorem id unde quos, sint eveniet
-          iusto? Voluptatem!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum suscipit autem officiis?
-          Dolores cum dolore maxime illum ratione, ab perspiciatis iure, dolorem id unde quos, sint eveniet
-          iusto? Voluptatem!</p>
-      </div>
-    </div>
-  </section>
-  <section id="clients">
-    <h1>Client List</h1>
-    <div class="box-container">
-      <div class="box">
-        <img src="./assets/images/image1.jpg" alt="foto de Camila">
-        <a href="#">Client 1</a>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit delectus repudiandae odit dolorem facere,
-          labore sapiente vero.</p>
-      </div>
-      <div class="box">
-        <img src="./assets/images/image4.jpeg" alt="foto de Camila">
-        <a href="#">Client 2</a>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit delectus repudiandae odit dolorem facere,
-          labore sapiente vero.</p>
-      </div>
-      <div class="box">
-        <img src="./assets/images/image3.jpg" alt="foto de Camila">
-        <a href="#">Client 3</a>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit delectus repudiandae odit dolorem facere,
-          labore sapiente vero.</p>
-      </div>
-    </div>
-
-  </section>
-
-  <section id="contact">
-    <div class="container">
-
-      <h1>Contato</h1>
-
-      <div class="box-contact">
-        <div class="form-contact">
-          <h3>Fale Conosco</h3>
-          <form>
-            <input type="text" placeholder="Seu Nome" required>
-            <input type="email" placeholder="E-mail" required>
-            <input type="tel" placeholder="Seu Telefone (Opcional)">
-            <textarea placeholder="Sua mensagem"></textarea required>
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
-
-        <div class="social">
-          <h3>Nos acompanhe</h3>
-          <ul>
-            <li><a href="https://instagram.com/arruda_camila?igshid=NGVhN2U2NjQ0Yg==" title="Siga-nos no Instagram"><img src="./assets/images/instagram.png" alt="Logo Instagram"></a></li>
-            <li><a href="https://www.facebook.com/camila.arruda.549?mibextid=ZbWKwL" title="Siga-nos no Facebook"><img src="./assets/images/facebook.png" alt="Logo Facebook"></a></li>
-            <li><a href="www.youtube.com/@camilaarruda3294" title="Visite nosso canal no Youtube"><img src="./assets/images/youtube.png" alt="Logo Youtube"></a></li>
-          </ul>
-        </div>
-
-      </div>
-        </div>
-    </section>
-    <footer>
-      <div class="container">
-        <p>
-          &copy; Games Shop by Camila Arruda - Todos os Direitos reservados - 2024
-        </p>
-      </div>
-    </footer>
-
+  <script src="./main.js"></script>
 </body>
-
 </html>
